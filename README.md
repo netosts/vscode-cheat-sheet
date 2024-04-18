@@ -7,8 +7,14 @@
 get(.*)_(.*)\(
 get\u$1\u$2(
 
+get([A-Za-z]+)_([A-Za-z]+)(?:_id)?\(
+get\u$1\u$2(
+
 // format Setters
 set(.*)_(.*)\(
+set\u$1\u$2(
+
+set([A-Za-z]+)_([A-Za-z]+)(?:_id)?\(
 set\u$1\u$2(
 
 // format toArray
